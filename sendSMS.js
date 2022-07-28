@@ -7,13 +7,14 @@ const africastalking = AfricasTalking({
 });
 
 
-module.exports = async function sendSMS() {
+module.exports = async function sendSMS(tel_num,message) {
     
     // TODO: Send message
     try {
         const result=await africastalking.SMS.send({
-            to: '+254727984598', 
-            message: 'Hey AT Ninja! Wassup...',
+            //to: '+254727984598', 
+            to: tel_num, 
+            message: message,
             from: 'METAMETA'
         });
         console.log(result);
