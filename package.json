@@ -1,4 +1,7 @@
 {
+  "scripts": {
+      "start": "node message_server.js"
+  },
   "dependencies": {
     "africastalking": "^0.5.5",
     "dotenv": "^16.0.1",
