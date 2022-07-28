@@ -1,5 +1,4 @@
 {
-    
   "scripts": {
       "start": "node message_server.js"
   },
