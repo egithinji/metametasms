@@ -8,14 +8,10 @@ app.get("/", function(req,res){
 });
 
 app.post("/send_message", function(req,res){
-    /*response = {
-        tel_num: req.body.tel_num,
-        message: req.body.message
-    };*/
+    console.log("received a send_message post request");
     messageSender(req.body.tel_num, req.body.message);
-    //console.log("got a post request");
     console.log("sent a message");
-    //res.send("sent: " + response);
+    res.status(200);
 });
 
 
