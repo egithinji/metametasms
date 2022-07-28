@@ -14,8 +14,10 @@ app.post("/send_message", function(req,res){
     res.status(200);
 });
 
-var server = app.listen(8000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
+//var server = app.listen(8000, function () {
+    //var host = server.address().address;
+    //var port = server.address().port;
     //console.log("Server listening at http://%s:%s",host,port);
-})
+//})
+
+app.listen(8000);
