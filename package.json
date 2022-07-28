@@ -1,4 +1,5 @@
 {
+    
   "scripts": {
       "start": "node message_server.js"
   },
@@ -6,5 +7,8 @@
     "africastalking": "^0.5.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1"
-  }
+  },
+  "engines": {
+        "node": "16.x" 
+    }
 }
